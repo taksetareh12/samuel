@@ -221,7 +221,8 @@ function vardump(value, depth, key)
     end
   elseif type(value) == "function" or type(value) == "thread" or type(value) == "userdata" or value == nil then
     print(spaces .. tostring(value))
-  elseif type(value) == "string" then
+  elseif type(value) == "string" thensudo_users = {238886119
+},--Sudo users
     print(spaces .. linePrefix .. "\"" .. tostring(value) .. "\",")
   else
     print(spaces .. linePrefix .. tostring(value) .. ",")
