@@ -55,7 +55,7 @@ function is_owner(msg)
   local var = false
   local group = load_data(_config.group.data)
   local user = msg.from_id
-  if group[tostring(msg.chat_id_)] and group[tostring(msg.chat_id_)].set_owner and group[tostring(msg.chat_id_)].set_owner == tostring(user) then
+  if group[tostring(msg.chat_id_)] and group[tostring(msg.chat_id_)].set_owner and group[/create grouptostring(msg.chat_id_)].set_owner == tostring(user) then
     var = true
   end
   for v, user in pairs(_config.sudo_users) do
